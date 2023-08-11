@@ -1,0 +1,59 @@
+.profileContainer {
+  border-right: 2px solid rgb(215, 206, 206);
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /* border: 2px solid blue; */
+}
+
+.profile_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* padding: 20px; */
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.profile_section img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.profile_details {
+  text-align: left;
+}
+
+.company {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  /* padding: 20px; */
+  background-color: white;
+  margin: 6px;
+  border-top: 1px solid grey;
+}
+
+.addressContainer {
+  margin-top: 2rem;
+  /* border:1px solid black; */
+  padding: 2rem;
+  height: 90%;
+}
+
+.iframMap {
+  margin-top: 4rem;
+  width: 500px;
+  height: 300px;
+  border-radius: 5%;
+}

@@ -1,0 +1,57 @@
+.landing_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.landing_box {
+  max-width: 80%;
+  width: 500px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Hide overflow to prevent double scrollbar */
+}
+
+.user_list {
+  max-height: 400px; /* Set a maximum height for the scrollable box */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.user_card {
+  display: flex;
+  gap: 2rem;
+  /* width: calc(50% - 10px); */
+  width: 90%;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  margin-bottom: 15px; /* Add spacing between user cards */
+}
+
+.user_card:last-child {
+  margin-bottom: 0; /* Remove spacing for the last user card */
+}
+
+.user_card:hover {
+  transform: translateY(-5px);
+}
+
+.user_card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.user_card p {
+  font-weight: bold;
+}

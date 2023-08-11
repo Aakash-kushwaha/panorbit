@@ -1,0 +1,128 @@
+.profileSection {
+  /* display: flex; */
+  margin: 1rem auto;
+  align-items: center;
+  text-align: center;
+}
+
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* left: 50rem; */
+  z-index: 100;
+}
+
+.modalContent {
+  /* border:1px solid red; */
+  background-color: white;
+  width: 300px;
+  height: 550px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  left: 55rem;
+  top: 5rem;
+  /* bottom: 5%; */
+  position: relative;
+}
+
+.closeModalBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  color: #333;
+  cursor: pointer;
+}
+
+.modalProfilePicture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.landing_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.landing_box {
+  max-width: 80%;
+  width: 500px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Hide overflow to prevent double scrollbar */
+}
+
+/* user list chat css */
+
+.user_list {
+  height: 250px; /* Set a maximum height for the scrollable box */
+  overflow-y: auto; /* Enable vertical scrolling */
+  /* border: 1px solid black; */
+}
+
+.user_card {
+  display: flex;
+  gap: 0.5rem;
+  /* width: calc(50% - 10px); */
+  width: 90%;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  margin-bottom: 15px; /* Add spacing between user cards */
+}
+
+.user_card:last-child {
+  margin-bottom: 0; /* Remove spacing for the last user card */
+}
+
+.user_card:hover {
+  transform: translateY(-5px);
+}
+
+.user_card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.user_card p {
+  font-weight: bold;
+}
+
+.signOutButton {
+  /* border:1px solid red; */
+  width: 40%;
+  margin: 1.5rem auto;
+  /* border-radius: 50%; */
+}
+
+.signOutButton button {
+  background-color: red;
+  color: white;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 15px;
+  border: none;
+}
